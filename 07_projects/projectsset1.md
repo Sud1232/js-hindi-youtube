@@ -40,7 +40,7 @@ buttons.forEach(function (button) {
 
 ```
 
-## project 2 solution 
+## project 2 solution code
 
 ``` javascript
 
@@ -66,4 +66,16 @@ form.addEventListener('submit', function (e) {
   }
 });
 
+```
+
+## project 3 solution code 
+
+```javascript
+const clock = document.getElementById('clock');
+
+setInterval(() => {
+  let date = new Date();
+  // console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString()
+},1000);
 ```
