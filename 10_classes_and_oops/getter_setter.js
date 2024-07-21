@@ -5,11 +5,11 @@ class User {
   }
 
   get email(){
-    return this.email.toUpperCase()
+    return this._email.toUpperCase()
   }
 
-  set email(){
-    retu
+  set email(value){
+    this._email= value
   }
 
   get password() {
@@ -22,4 +22,4 @@ class User {
 }
 
 const hitesh = new User("hitesh@hitesh.ai", "abc")
-console.log(hitesh.password);
+console.log(hitesh.email);
